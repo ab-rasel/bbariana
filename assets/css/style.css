@@ -1,0 +1,1398 @@
+/*
+Template Name: KingsThemes
+Description: HTML5 / BOOTSTRAP / CSS3 One Page
+Version: 1.0.0
+Author: Abdur Rahim(Rasel),Shagor
+*/
+
+/*
+one page responsive html5 table of content ::
+1. header menu.
+2. fixedHeader
+3. slider .
+4. about section
+5. funfact section
+6. service section
+7. portfolio section
+8. pricing section
+9. team section
+10. blog section
+11. contact section
+12. footer section(copy right sec)
+13. back to top
+14. preloader
+*/
+/*------fixed header--------------*/
+.fixedHeader {
+    background: #fff none repeat scroll 0 0;
+    height: auto;
+    padding: 19px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: .5s;
+    box-shadow: 5px 0px 13px #ddd;
+}
+
+.fixedHeader .headerMenu ul li a {
+    color: #7a7979;
+}
+
+.fixedHeader .headerMenu ul .active a {
+    color: #ff4080;
+}
+
+/* 01. ===========================header menu sec start===============*/
+header {
+    background: rgba(1, 177, 174, 0.1) none repeat scroll 0 0;
+    border-bottom: 1px solid rgba(248, 187, 208, .5);
+    height: auto;
+    padding: 19px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+.headerLogo{
+    width: 100%;
+    height: auto;
+    padding: 6px 0;
+}
+.headerLogo img{
+    width: 100%;
+    height: auto;
+}
+.headerMenu ul {
+    text-align: right;
+}
+
+.headerMenu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 26px;
+    margin-top: 9px;
+    position: relative;
+}
+
+.headerMenu ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 500ms ease 0s;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+
+.headerMenu ul li a:hover {
+    color: #ff4080;
+}
+
+.headerMenu ul .active a {
+    color: #ff4080;
+}
+
+.headerMenu ul li:after {
+    background: #ff4080 none repeat scroll 0 0;
+    bottom: -28px;
+    content: "";
+    height: 3px;
+    left: 0;
+    content: '';
+    opacity: 1;
+    position: absolute;
+    transition: all 500ms ease 0s;
+    visibility: visible;
+    width: 100%;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+
+}
+
+.headerMenu ul li:before {
+    background: #ff4080 none repeat scroll 0 0;
+    top: -28px;
+    content: "";
+    height: 3px;
+    left: 0;
+    content: '';
+    opacity: 1;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    transition: all 500ms ease 0s;
+    visibility: visible;
+    width: 100%;
+
+}
+
+.headerMenu ul li.active:before,
+.headerMenu ul li.active:after {
+    transform: scale(1);
+}
+
+.headerMenu ul li:hover:before,
+.headerMenu ul li:hover:after {
+    transform: scale(1);
+}
+
+/*-----------------end menu section---------------------*/
+
+/* 02. ========================slider section start================*/
+.sliderSec {
+    position: relative;
+    background: #ff4080;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.tp-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.SlideOverLay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+
+}
+
+.sliderContent {
+    position: relative;
+}
+
+.sliderContent h1 {
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    text-shadow: 1px 1px 2px #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sliderContent h4 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.sliderbtn .kings_btn {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    padding: 17px 44px;
+    text-transform: capitalize;
+}
+
+.tparrows.default.round {
+    background: transparent;
+    border: 1px solid #01b1ae;
+    border-radius: 50%;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.tparrows.default.round:hover {
+    border-color: #ff4080;
+    color: #fff;
+}
+
+.tparrows.default.round:hover:before {
+    color: #ff4080;
+}
+
+.tparrows.default.round:hover:after {
+    color: #ff4080;
+}
+
+.tp-leftarrow.default.round {
+    position: relative;
+}
+
+.tp-leftarrow.default.round:before {
+    position: absolute;
+    content: '\f104';
+    font-family: 'FontAwesome';
+    left: 0;
+    padding: 4px 15px;
+    color: #01b1ae;
+    font-size: 20px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.tp-rightarrow.default.round:after {
+    position: absolute;
+    content: '\f105';
+    font-family: 'FontAwesome';
+    left: 0;
+    padding: 4px 16px;
+    color: #01b1ae;
+    font-size: 20px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.tp-leftarrow.tparrows.default.round {
+    left: 50px !important;
+    top: 51% !important;
+}
+
+.tp-rightarrow.tparrows.default.round {
+    right: 50px !important;
+    top: 51% !important;
+
+}
+
+.tparrows.default.round.hidearrows,
+.tp-bullets.simplebullets.hidebullets {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.tp-bullets.simplebullets .bullet {
+    display: none;
+}
+
+.tp-bullets.simplebullets.round .bullet { /* bullet none korar jonno  ai css*/
+    display: none;
+}
+
+/*-------------------end slider section---------------*/
+
+/* 03. ===================start about section================*/
+.aboutSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.aboutBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.aboutImg {
+    width: 100%;
+    height: auto;
+}
+
+.aboutImg img {
+    width: 95%;
+    height: 300px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 1px 3px #000;
+}
+
+.aboutBox h4 {
+    color: #111;
+    font-family: "Lato",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.aboutBox p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.myContent {
+    padding: 10px 0 20px;
+}
+
+.myContent h4 {
+    color: #111;
+    font-family: "Lato",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.myContent p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/*-----------------------accordian---------------------*/
+.collapHead {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 26px;
+    margin: 20px 0;
+}
+
+a:focus,
+a:hover,
+a:active {
+    outline: 0;
+    text-decoration: none;
+}
+
+.panel:last-child {
+    border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+    border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0;
+}
+
+.panel-heading {
+
+    border-radius: 0;
+    border: none;
+    color: #333;
+    padding: 0;
+}
+
+.panel-title a {
+    border-radius: 2px;
+    color: #01b1ae;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    position: relative;
+    font-family:"Lato", sans-serif;
+    border-bottom: 1px solid #dddddd;
+}
+
+.panel-body {
+    color: #7a7979;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+#bs-collapse .panel-heading a:after {
+    content: '\f106';
+    font-size: 24px;
+    position: absolute;
+    font-family: 'fontawesome';
+    right: 5px;
+    top: 10px;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+    content: '\e909';
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+/* #accordion rotate icon option */
+#accordion .panel-heading a:before {
+    content: '\f106';
+    font-size: 24px;
+    position: absolute;
+    font-family: 'fontawesome';
+    right: 12px;
+    top: 10px;
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+#accordion .panel-heading.active a:before {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+
+}
+
+#accordion .panel-heading.active a {
+    background: #01b1ae;
+    color: #ffffff;
+}
+
+/*-------------------end about section---------------*/
+
+/* 04. =======================start funfact section=====================*/
+.funfactSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url("../images/funfact.jpg") no-repeat center center /cover;
+    background-attachment: fixed;
+}
+
+.funfactSec:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, .7);
+}
+
+.commonTitle.funCommnTitle h1,
+.commonTitle.funCommnTitle p {
+    color: #ffffff;
+}
+
+.singleFunfact {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.singleFunfact h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+}
+
+.singleFunfact i {
+    font-size: 50px;
+    color: #ff4080;
+}
+
+.singleFunfact h5 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*=============end funfact section=======================*/
+
+/* 05. =============start service section=======================*/
+.serviceSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(../images/section-background.png) no-repeat center center /cover;
+}
+
+.mainserv {
+    box-shadow: 9px 9px 15px 0 rgba(72, 46, 46, 0.2);
+    height: auto;
+    margin-bottom: 22px;
+    padding: 10px;
+    position: relative;
+    transition: all 500ms ease 0s;
+    width: 100%;
+}
+
+.mainserv:hover {
+    box-shadow: none;
+}
+
+.mainserv:hover .serviceBar1:after,
+.mainserv:hover .serviceBar1:before,
+.mainserv:hover .serviceBar2:after,
+.mainserv:hover .serviceBar2:before,
+.mainserv:hover .serviceBar3:after,
+.mainserv:hover .serviceBar3:before,
+.mainserv:hover .serviceBar4:after,
+.mainserv:hover .serviceBar4:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.serviceBar1:after {
+    background: #ff4080 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 10%;
+}
+
+.serviceBar1:before {
+    background: #ff4080 none repeat scroll 0 0;
+    content: "";
+    height: 15%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 2px;
+}
+
+.serviceBar2:after {
+    background: #ff4080 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 10%;
+}
+
+.serviceBar2:before {
+    background: #ff4080 none repeat scroll 0 0;
+    content: "";
+    height: 15%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 2px;
+}
+
+.serviceBar3:after {
+    background: #ff4080 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 10%;
+}
+
+.serviceBar3:before {
+    background: #ff4080 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 15%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 2px;
+}
+
+.serviceBar4:after {
+    background: #ff4080 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 10%;
+}
+
+.serviceBar4:before {
+    background: #ff4080 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 15%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    width: 2px;
+}
+
+.serviceIcon i {
+    background-color: #01b1ae;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 22px;
+    margin: 14px 0;
+    padding: 12px;
+}
+
+.serviceContent h4 {
+    font-size: 18px;
+}
+
+.serviceContent p {
+    font-size: 14px;
+}
+
+/*-----------------------end service section----------------------*/
+
+/* 06. -----------------------start portfolio sec section----------------------*/
+.PortfolioSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.tabMenu {
+    margin-bottom: 50px;
+}
+
+.tabMenu ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.tabMenu ul li {
+    background: #01b1ae;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    list-style: outside none none;
+    padding: 6px 22px;
+    transition: all 500ms ease 0s;
+    margin: 0 5px;
+}
+
+.tabMenu ul li.active,
+.tabMenu ul li:hover {
+    color: #FFFFFF;
+    background: #ff4080;
+}
+
+/*---------mix tab images-----------*/
+.mainMixItem {
+    position: relative;
+}
+
+.MixImg {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.mainMixItem img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+
+.mainMixItem:hover img {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.mainMixItem:hover .imgOverlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imgOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 177, 174, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    cursor: pointer;
+}
+
+.imgOverContent {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all 500ms ease 0s;
+    visibility: hidden;
+    text-align: center;
+    margin: auto;
+    right: 0;
+}
+
+.mainMixItem:hover .imgOverContent {
+    opacity: 1;
+    visibility: visible;
+    bottom: 10px;
+
+}
+
+.imgOverContent h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+}
+
+.imgOverContent h3:hover{
+    color: #ff4080;
+}
+
+.imgOverContent p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.imgOverContent i{
+    color: #FFFFFF;
+    border:1px solid #FFFFFF;
+    padding:12px;
+    border-radius: 4px;
+    -webkit-transition: all ease 500ms;
+    -moz-transition: all ease 500ms ;
+    -ms-transition: all ease 500ms ;
+    -o-transition: all ease 500ms ;
+    transition: all ease 500ms ;
+}
+.imgOverContent i:hover{
+    background: #ff4080;
+    border-color: #ff4080;
+}
+#Grid .mix {
+    display: none;
+}
+
+/*-----------------------end portfolio section----------------------*/
+
+/* 07. =======================start pricing table=====================*/
+.pricingSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.singlePricing {
+    box-shadow: 2px 6px 21px #ddd;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.singlePricing:hover .pricingHead,
+.singlePricing:hover .pricingFooter a,
+.singlePricing.singlePricing1 .pricingHead,
+.singlePricing.singlePricing1 .pricingFooter a {
+    background: #ff4080;
+}
+
+.singlePricing:hover .pricingHead::before,
+.singlePricing.singlePricing1 .pricingHead::before {
+    border-color: #ff4080 transparent transparent;
+    border-style: solid;
+    border-width: 46px 50px 0;
+}
+
+/*--------pricing head----------*/
+.pricingHead {
+    background: #01b1ae none repeat scroll 0 0;
+    color: #ffffff;
+    height: auto;
+    padding: 1px 0;
+    position: relative;
+    width: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    height: 78px;
+    transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+}
+
+.pricingHead h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.pricingHead p {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 4px;
+    line-height: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.pricingHead span {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.triangle {
+    height: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 44px;
+    top: 73px;
+    width: 0;
+}
+
+.pricingHead::before {
+    border-color: #01b1ae transparent transparent;
+    border-style: solid;
+    border-width: 46px 50px 0;
+    bottom: -46px;
+    content: "";
+    height: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 0;
+    transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+}
+
+/*------pricing body------*/
+.pricingBody {
+    padding: 50px 0 21px;
+}
+
+.pricingBody ul {
+    padding: 0;
+    margin: 0;
+}
+
+.pricingBody ul li {
+    border-bottom: 1px dotted #e5e5e5;
+    color: #7a7979;
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    list-style: outside none none;
+    padding: 7px 0;
+}
+
+/*------pricing footer------*/
+.pricingFooter {
+    position: relative;
+}
+
+.pricingFooter a {
+    background: #01b1ae none repeat scroll 0 0;
+    padding: 12px 36px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*----------end pricing section----------*/
+
+/* 08 .===============start team section===================*/
+.teamSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 75px;
+    overflow: hidden;
+}
+
+.singleTeam {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.teamImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.singleTeam img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+
+}
+
+.singleTeam:hover img {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.teamContent {
+    background: rgba(1, 177, 174, 0.7) none repeat scroll 0 0;
+    bottom: -33px;
+    color: #ffffff;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    padding: 13px 0;
+    position: absolute;
+    right: 0;
+    width: 250px;
+}
+
+.teamContent h4 {
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.teamContent p {
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.teamSocail {
+    bottom: 0;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease 0s;
+}
+
+.singleTeam:hover .teamSocail {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+}
+
+.teamSocail a {
+    border: 1px solid #01b1ae;
+    border-radius: 50%;
+    color: #01b1ae;
+    display: block;
+    margin: 13px;
+    padding: 8px;
+}
+
+.teamSocail a:hover {
+    border-color: #ff4080;
+    color: #ff4080;
+}
+
+/*----------end team section----------*/
+
+/* 09. =================start blog sec================*/
+.blogSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.singleBlog {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white none repeat scroll 0 0;
+    border-radius: 4px;
+    box-shadow: 12px 15px 20px 0 rgba(72, 46, 46, 0.20);
+    opacity: 1;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+.singleBlog:hover {
+    box-shadow: 0px 0px 3px 0 rgba(72, 46, 46, 0.20);
+}
+
+.singleBlog img {
+    width: 100%;
+    height: auto;
+}
+
+.singleBlog h3 {
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 14px 0 2px;
+    text-transform: capitalize;
+    transition: all 500ms ease 0s;
+    line-height: 30px;
+}
+.blogAuthor{
+    position: relative;
+    padding:8px 0;
+}
+.singleBlog i {
+    font-size: 18px;
+}
+
+.singleBlog span {
+    font-size: 15px;
+    font-family: "lato", sans-serif;
+    margin-left: 5px;
+}
+
+.singleBlog p {
+    font-size: 14px;
+}
+
+.singleBlog .blogbtn {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #01b1ae;
+    width: 90px;
+    display: inline-block;
+    transition: all 500ms ease 0s;
+}
+.authorName {
+    color: #01b1ae;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+.singleBlog .blogbtn:hover,
+.singleBlog h3:hover,
+.authorName:hover{
+    color: #ff4080;
+}
+
+/*----------------------------end blog section-------------*/
+
+/* 10. ======================start contact form=================*/
+.contactFormSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(../images/contact.jpg) no-repeat center center /cover;
+    background-attachment: fixed;
+}
+
+.contactFormSec:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, .8);
+}
+
+.contactInfo {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.findLocaion {
+    width: 100%;
+    position: relative;
+}
+
+.findLocaion h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.findLocaion p {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.findLocaion a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.map {
+    border-radius: 8px;
+    height: 276px;
+    margin-top: 44px;
+    width: 85%;
+}
+
+/*-------form---*/
+.inName {
+    font-size: 14px;
+    font-weight: 400;
+    height: 42px;
+    background: rgb(58, 59, 61);
+    border: none;
+    color: #FFFFFF;
+}
+
+.inName.form-control:focus,
+.inMessage.form-control:focus{
+    border:none;
+    box-shadow: none;
+    outline: 0 none;
+}
+.inMessage {
+    font-size: 14px;
+    font-weight: 400;
+    height: 210px !important;
+    resize: none;
+    background: rgb(58, 59, 61);
+    border: none;
+    color: #FFFFFF;
+}
+
+/*==============================end contact section===============*/
+/*--------------start partner section------------------*/
+.partnerSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.partnerImg {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    -webkit-transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    transition: all ease 500ms;
+}
+
+.partnerImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.partnerImg:hover {
+    box-shadow: 6px 9px 20px 0 rgba(72, 46, 46, 0.2);
+}
+
+/*-----------end partner section--------*/
+
+/* 12. =============================start footer section=============*/
+
+.copyRightSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    background: #01b1ae;
+}
+
+.footerMenu a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 29px;
+}
+
+.copyRightContent p {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.footerSocail {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.footerSocail a {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    margin: 18px 10px;
+    padding: 12px 14px;
+    text-align: right;
+    width: 40px;
+    -webkit-transition: all ease 500ms 0s;
+    -moz-transition: all ease 500ms 0s;
+    -ms-transition: all ease 500ms 0s;
+    -o-transition: all ease 500ms 0s;
+    transition: all ease 500ms 0s;
+}
+
+.footerSocail a:hover {
+    color: #ff4080;
+    background: #ffffff;
+}
+
+/*-----------end footer--------*/
+
+/*------------back to top-------------*/
+.BackTo {
+    background: #01b1ae none repeat scroll 0 0;
+    border: 1px dotted #fff;
+    border-radius: 50%;
+    bottom: 35px;
+    color: #979797;
+    cursor: pointer;
+    font-size: 20px;
+    height: 44px;
+    position: fixed;
+    right: 14px;
+    text-align: center;
+    width: 46px;
+    z-index: 9;
+}
+
+.BackTo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.BackTo a:hover {
+    color: #ff4080;
+}
+
+/*=======================================================================
+// Preloader
+=========================================================================*/
+.preloader {
+    background: #01b1ae;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+#loading {
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#loading-center {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+#loading-center-absolute {
+    height: 50px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+}
+
+.object {
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #ff4080;
+    height: 20px;
+    left: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 37px;
+    width: 20px;
+}
+
+#second_object {
+    animation: 1s ease 0s normal none infinite running second_object;
+}
+
+#third_object {
+    animation: 1s ease 0.5s normal none infinite running third_object;
+}
+
+@keyframes second_object {
+    0% {
+    }
+    50% {
+        transform: translate(150%, -150%) scale(2, 2);
+    }
+    100% {
+    }
+}
+
+@keyframes third_object {
+    0% {
+    }
+    50% {
+        transform: translate(-150%, 150%) scale(2, 2);
+    }
+    100% {
+    }
+}
+

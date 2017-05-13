@@ -1,0 +1,175 @@
+/*
+Template Name: KingsThemes
+Description: HTML5 / BOOTSTRAP / CSS3 One Page
+Version: 1.0.0
+Author: Rasel,Shagor
+*/
+/*============== All Google font================*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+/*==============Google font end================*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+*{
+    padding:0;
+    margin:0;
+}
+ul{
+    padding:0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway";
+    font-weight: 600;
+    line-height: 1.8;
+    text-transform: capitalize;
+    color: #333;
+}
+h3,h4{
+    font-size:20px;
+}
+.noPadding{
+    padding: 0 !important;
+}
+a{
+    text-decoration: none !important;
+    display: block;
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-transform: capitalize;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -ms-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+p{
+    color: #7a7979;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing:0;
+}
+/*common button*/
+.kings_btn {
+    font-size: 12px;
+    display: inline-block;
+    letter-spacing: 1.1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    min-height: 14px;
+    padding: 15px 40px;
+    line-height: .8;
+    color: #fff;
+    background: #ff4080;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kings_btn span {
+    background: #ff4080 ;
+    border-radius: 50%;
+    display: block;
+    height: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease 0s, height 0.5s ease 0s;
+    width: 0;
+    z-index: 1;
+}
+.kings_btn:hover span {
+    height: 562.5px;
+    width: 562.5px;
+}
+.kings_btn.big:hover span {
+    height: 600px;
+    width: 1500px;
+}
+.kings_btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.kings_btn i{
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+}
+.kings_btn.hover_white:hover{
+    color: #ff4080;
+}
+.kings_btn.hover_white span{
+    background: #fff;
+}
+.kings_btn.hover_black:hover i{
+    color: #fff;
+}
+.kings_btn.hover_black span{
+    background: #333;
+}
+.btn_sq{
+    border-radius: 0;
+}
+
+/*common section*/
+.commonTitle h1{
+    font-size: 30px;
+    line-height:36px;
+    letter-spacing:.5px;
+    font-weight:300;
+    color: #333;
+    text-transform: uppercase;
+    font-family:"Lato",sans-serif;
+}
+.commonTitle h1 label{
+    color: #ff4080;
+    font-weight:400;
+}
+.commonTitle span{
+    display: block;
+    width:60px;
+    height:1px;
+    background: #ff4080;
+    margin:2px auto;
+    position: relative;
+    
+}
+.commonTitle span::after {
+    background: #01b1ae none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 55px;
+}
+.commonTitle span::before {
+    background: #ff4080 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 100%;
+}
+.commonTitle p{
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing:0;
+    padding: 20px 0 55px 15px;
+}
+.commonPadding{
+    padding:50px 0;
+}

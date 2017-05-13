@@ -1,0 +1,284 @@
+/*
+Template Name: KingsThemes
+Description: HTML5 / BOOTSTRAP / CSS3 One Page
+Version: 1.0.0
+Author: Abdur Rahim(Rasel),Shagor
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .headerMenu{
+        display: none;
+    }
+    header {
+        padding: 9px 0;
+        background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    }
+    .fixedHeader{
+        padding:11px 0;
+    }
+    .mobileMenu{
+        border-radius: 2px;
+        cursor: pointer;
+        height: 30px;
+        left: auto;
+        line-height: 4px;
+        padding: 2px 4px 0;
+        position: absolute;
+        right: 14px;
+        top: 10px;
+        transition: all 400ms ease-in-out 0s;
+        width: 40px;
+    }
+    .mobileMenu span{
+        background: #ff4080;
+        display: inline-block;
+        height: 3px;
+        transition: all 400ms ease-in-out 0s;
+        width: 100%;
+    }
+
+    .headerMenu ul{
+        margin-left: -99px;
+        text-align: left;
+        margin-top: 51px;
+    }
+    .headerMenu ul li {
+        display: block;
+    }
+    .headerMenu ul li::after {
+        display: none;
+    }
+    .headerMenu ul li::before {
+        display: none;
+    }
+    .commonPadding{
+        padding:10px 0;
+    }
+    .commonTitle p {
+        padding: 20px 0 22px 15px;
+    }
+    p {
+        font-size: 13px;
+    }
+    h3, h4 {
+        font-size: 15px;
+    }
+    /*- slider sec-*/
+
+    .sliderContent h4 {
+        font-size: 14px;
+        line-height: 16px;
+        margin:50px 0 !important;
+    }
+    .sliderContent br{
+        display: none;
+    }
+    .sliderContent h1 {
+        font-size: 22px !important;
+        margin-bottom: 50px !important;
+    }
+    .sliderbtn a {
+        font-size: 17px;
+        margin-top: 58px !important;
+    }
+    .tp-leftarrow.tparrows.default.round {
+        display: none !important;
+    }
+
+    .tp-rightarrow.tparrows.default.round {
+        display: none !important;
+    }
+    /*---------about------*/
+    .tabMenu ul li {
+        font-size: 12px;
+        padding: 8px 11px;
+        margin:0;
+    }
+    .myContent {
+        padding: 10px 0 7px;
+    }
+    .mainserv {
+        padding: 0px 15px;
+    }
+    /*-------pricing--------*/
+    .singlePricing {
+        margin-bottom: 20px;
+    }
+    .singleTeam {
+        margin-bottom: 52px;
+    }
+    .singleBlog {
+        margin-bottom: 23px;
+    }
+    .map {
+        margin-bottom: 23px;
+    }
+    .partnerImg {
+        margin-bottom: 20px;
+    }
+    .footerSocail {
+        text-align: left;
+    }
+    .footerSocail a {
+        margin: 18px 6px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .headerMenu{
+        display: none;
+    }
+    header {
+        padding: 9px 0;
+        background: rgba(1, 177, 174, 0.5) none repeat scroll 0 0;
+    }
+    .fixedHeader{
+        padding:11px 0;
+    }
+    .mobileMenu{
+        border-radius: 2px;
+        cursor: pointer;
+        height: 30px;
+        left: auto;
+        line-height: 4px;
+        padding: 2px 4px 0;
+        position: absolute;
+        right: 14px;
+        top: 12px;
+        transition: all 400ms ease-in-out 0s;
+        width: 40px;
+    }
+    .mobileMenu span{
+        background: #ff4080;
+        display: inline-block;
+        height: 3px;
+        transition: all 400ms ease-in-out 0s;
+        width: 100%;
+    }
+    .headerMenu ul{
+        margin-left: -99px;
+        text-align: left;
+        margin-top: 51px;
+    }
+    .headerMenu ul li {
+        display: block;
+    }
+    .headerMenu ul li::after {
+        display: none;
+    }
+    .headerMenu ul li::before {
+        display: none;
+    }
+    .commonPadding{
+        padding:10px 0;
+    }
+    .commonTitle p {
+        padding: 20px 0 22px 15px;
+    }
+    p {
+        font-size: 13px;
+    }
+    h3, h4 {
+        font-size: 15px;
+    }
+    /*- slider sec-*/
+
+    .sliderContent h4 {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 30px 38px !important;
+    }
+    .sliderContent br{
+        display: none;
+    }
+    .sliderContent h1 {
+        font-size: 22px !important;
+        margin-bottom: 50px !important;
+    }
+    .sliderbtn a {
+        font-size: 17px;
+        margin-top: 58px !important;
+    }
+    .tp-leftarrow.tparrows.default.round {
+        display: none !important;
+    }
+
+    .tp-rightarrow.tparrows.default.round {
+        display: none !important;
+    }
+    /*---------about------*/
+    .tabMenu ul li {
+        font-size: 12px;
+        padding: 8px 11px;
+        margin:0;
+    }
+    .myContent {
+        padding: 10px 0 7px;
+    }
+    .mainserv {
+        padding: 0px 15px;
+    }
+    /*-------pricing--------*/
+    .singlePricing {
+        margin-bottom: 20px;
+    }
+    .mainMixItem{
+        margin-bottom: 15px;
+    }
+    .singleTeam {
+        margin-bottom: 52px;
+    }
+    .singleBlog {
+        margin-bottom: 23px;
+    }
+    .map {
+        margin-bottom: 23px;
+    }
+    .footerSocail {
+        text-align: left;
+    }
+    .footerSocail a {
+        margin: 18px 6px;
+    }
+    .partnerImg {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .headerMenu ul li {
+        margin-left: 11px;
+    }
+    .headerMenu ul li a{
+        font-size:13px;
+    }
+    .tp-leftarrow.tparrows.default.round {
+        left: 15px !important;
+        top: 50% !important;
+    }
+
+    .tp-rightarrow.tparrows.default.round {
+        right: 15px !important;
+        top: 50% !important;
+    }
+    .singlePricing {
+        margin-bottom: 20px;
+    }
+    .sliderContent h4 {
+        color: #fff;
+        font-family: "Lato",sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .sliderContent h1 {
+        color: #fff;
+        font-family: "Raleway",sans-serif;
+        font-size: 37px;
+        font-weight: 700;
+        position: relative;
+        text-shadow: 1px 1px 2px #fff;
+        text-transform: uppercase;
+    }
+}
